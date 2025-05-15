@@ -1,0 +1,24 @@
+<!-- Create a html form “result.html” to accept Rollno of student using submit
+button. Write “result.php” code to check the result of student “pass’ or “fail”.
+Create a table result_table in MySQL database “My_db” with two columns
+Rollno and Status. Also write PHP code to delete a record from result_table. -->
+
+<html>
+
+<body>
+    <form method="post" action="result.php">
+        <label for="rollno">Enter Rollno :</label>
+        <input id="rollno" type="number" name="rollno" />
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form method="post" action="result.php">
+        <label for="rollno">Enter Rollno To delete :</label>
+        <input id="delete_rollno" type="number" name="delete_rollno" />
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
