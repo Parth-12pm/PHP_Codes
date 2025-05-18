@@ -14,7 +14,7 @@
         <input id="post" name="post" /><br>
         <label>Enter Employee Salary :</label>
         <input id="salary" name="salary" /><br>
-        <button type="submit">Submit</button>
+        <input type="submit" name="submit" />
     </form>
 </body>
 

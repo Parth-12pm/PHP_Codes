@@ -1,7 +1,5 @@
 <?php
 
-$rollno = $_POST['rollno'] ?? null;
-$delete_rollno = $_POST['delete_rollno'] ?? null;
 
 
 $conn = new mysqli("localhost", "root", "");
@@ -18,7 +16,8 @@ mysqli_select_db($conn, "my_db");
 $sql = "create table if not exists result_table(rollno int(3),status varchar(25))";
 $conn->query($sql);
 
-if ($rollno !== null) {
+if (isset($_POST["result"])) {
+    $rollno = $_POST['rollno'];
 
     $sql = "SELECT status FROM result_table WHERE rollno = $rollno";
     $result = $conn->query($sql);
@@ -32,8 +31,10 @@ if ($rollno !== null) {
 }
 
 
-if ($delete_rollno !== null) {
-    $sql = "delete from result_table where rollno= $delete_rollno";
+if (isset($_POST["delete"])) {
+    $rollno = $_POST['rollno'];
+
+    $sql = "delete from result_table where rollno= $rollno";
 
     if ($conn->query($sql)) {
         echo "Record Deleted";

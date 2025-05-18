@@ -1,20 +1,8 @@
 <!-- WAP to find Prime Number -->
 
-<html>
-
-<body>
-    <form action="code_2.php" method="post">
-        <label>Enter a Number</label>
-        <input type="number" name="number"><br>
-        <button type="submit">Submit</button>
-    </form>
-</body>
-
-</html>
-
 <?php
 
-if (isset($_POST['number'])) {
+if (isset($_POST['submit'])) {
     $num = $_POST['number'];
     if ($num <= 1) {
         echo $num . " is not a prime number";
@@ -33,4 +21,11 @@ if (isset($_POST['number'])) {
         }
     }
 }
+
 ?>
+
+<form method="post">
+    <label>Enter a Number</label>
+    <input type="number" name="number"><br>
+    <input type="submit" name="submit" />
+</form>

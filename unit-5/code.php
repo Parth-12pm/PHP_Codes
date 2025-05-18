@@ -19,4 +19,6 @@ if ($conn->query($sql)) {
     echo "Database creation Failed" . $conn->error;
 }
 
+mysqli_select_db($conn, "college");
+
 $conn->close();
