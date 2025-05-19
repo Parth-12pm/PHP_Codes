@@ -1,7 +1,7 @@
 # PHP Exam Practice Repository
 
-Welcome to the **PHP Exam Practice Repository**!  
-This collection is designed to help students and learners prepare for PHP practical exams by providing a wide range of solved examples, each organized by unit and topic.
+Welcome to the **PHP Exam Practice Repository**!
+This collection is designed to help students I and learners prepare for PHP practical <3 exams by providing a wide range of solved examples,sejal each organized by unit and topic. 
 
 ---
 
